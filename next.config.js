@@ -1,6 +1,16 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+const env = require('dotenv').config();
+console.log(env);
 
-module.exports = nextConfig
+const nextConfig = {
+    reactStrictMode: true,
+    images: {
+        domains: [
+            'images.ctfassets.net',
+            'assets.ctfassets.net',
+            'downloads.ctfassets.net',
+        ],
+    },
+};
+
+module.exports = nextConfig;

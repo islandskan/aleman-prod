@@ -1,0 +1,47 @@
+/* https://stackoverflow.com/questions/73659662/rich-text-react-renderer-does-not-render-h1-or-spaces-between-paragraphs */
+
+.bodyContainer {
+    /* width: 400px; */
+}
+
+.artistContainer,
+.cvContainer {
+    margin-bottom: 3em;
+}
+
+.cvContainer {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    row-gap: 20px;
+}
+
+.publicationsContainer {
+}
+
+.cvContainer h3.page-title {
+    grid-column: 1 / span 2;
+}
+
+.cvBtn {
+    grid-column: 6 / span 2;
+    height: 70px;
+}
+
+.cvContainer .bodyContainer {
+    grid-column: 1 / -1;
+}
+
+/* Styles for the Rich Text Field Nodes */
+
+.bodyContainer p {
+    /* line-height: 1.4; */
+}
+
+.artistContainer p:nth-of-type(3),
+.artistContainer p:nth-of-type(5) {
+    margin-top: 1.6rem;
+}
+
+.publicationsContainer .bodyContainer a {
+    font-weight: 600;
+}
