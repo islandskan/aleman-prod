@@ -15,13 +15,6 @@ export const Footer = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link href='http://alemanartlife.blogspot.com/'>
-                            <a target='_blank' rel='noreferrer'>
-                                Blog
-                            </a>
-                        </Link>
-                    </li>
-                    <li>
                         <Link href='https://ed-art.se/sv/konstnarer/132__madeleine-aleman/'>
                             <a target='_blank' rel='noreferrer'>
                                 Buy Prints (Ed Art)
