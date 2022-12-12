@@ -7,7 +7,7 @@ export default function Home() {
     return (
         <>
             <MetaData page='Home' />
-            <div className='container'>
+            <div className='container home'>
                 <Image
                     src={HomePageImg}
                     alt='axel #4'

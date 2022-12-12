@@ -49,6 +49,13 @@
     .contact {
         display: grid;
         grid-template-columns: 0.8fr 1.2fr;
+        grid-template-rows: auto 1fr auto;
         column-gap: 2em;
+    }
+
+    .contact::before,
+    .contact::after {
+        border: 2px solid purple;
+        grid-column: 1 / span 2;
     }
 }
