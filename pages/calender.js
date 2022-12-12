@@ -26,7 +26,6 @@ const Calender = () => {
         <>
             <MetaData page='Calender' />
             <div className={`container ${styles.news}`}>
-                <h3 className='page-title'>Current & Upcoming</h3>
                 <div className={styles.newsList}>{calenderElements}</div>
             </div>
         </>

@@ -24,7 +24,7 @@ const Projects = ({ projects }) => {
         <>
             <MetaData page='Projects' />
             <div className='container'>
-                <h2 className='page-title'>All Projects</h2>
+                <h2 className='page-title'>Projects</h2>
                 <div className={styles.projectsList}>{projectElements}</div>
             </div>
         </>

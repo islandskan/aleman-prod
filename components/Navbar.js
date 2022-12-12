@@ -36,7 +36,7 @@ export const Navbar = () => {
                     </li>
                     <li>
                         <Link href='/projects'>
-                            <a>Works</a>
+                            <a>Projects</a>
                         </Link>
                     </li>
                     <li>
@@ -46,7 +46,7 @@ export const Navbar = () => {
                     </li>
                     <li>
                         <Link href='/calender'>
-                            <a>Calender</a>
+                            <a>News</a>
                         </Link>
                     </li>
                     <li>
