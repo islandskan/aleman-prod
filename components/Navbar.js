@@ -34,35 +34,10 @@ export const Navbar = () => {
                             <a>Home</a>
                         </Link>
                     </li>
-                    <li onClick={handleOpen}>
-                        <a className='projects'>Works</a>
-                        {showAccordion && (
-                            <div className='accordion-panel'>
-                                <Link href='/projects/hilma'>
-                                    <a>The Hilma Suite</a>
-                                </Link>
-                                <Link href='/projects/axel'>
-                                    <a>The Axel Suite</a>
-                                </Link>
-                                <Link href='/projects/emanuel'>
-                                    <a>The Emanuel Suite</a>
-                                </Link>
-                                <Link href='/projects/axis-mundi'>
-                                    <a>Axis Mundi</a>
-                                </Link>
-                                <Link href='/projects/journey'>
-                                    <a>Journey</a>
-                                </Link>
-                                <Link href='/projects/correspondances'>
-                                    <a>Correspondances</a>
-                                </Link>
-                                <Link href='/projects'>
-                                    <a className='see-all-projects'>
-                                        See all works
-                                    </a>
-                                </Link>
-                            </div>
-                        )}
+                    <li>
+                        <Link href='/projects'>
+                            <a>Works</a>
+                        </Link>
                     </li>
                     <li>
                         <Link href='/about'>
