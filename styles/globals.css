@@ -47,7 +47,7 @@ img {
 .btn {
     background-color: var(--dark);
     color: var(--white);
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     cursor: pointer;
 }
 
@@ -55,7 +55,7 @@ button,
 input,
 textarea {
     border: none;
-    padding: 12px;
+    padding: 8px;
 }
 
 textarea {
@@ -94,7 +94,7 @@ h6 {
 }
 
 .page-title {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: 30px;
     text-transform: uppercase;
@@ -156,7 +156,7 @@ nav .logo {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 500px;
+    height: 400px;
 }
 
 .menu.open {
@@ -182,6 +182,11 @@ nav .logo {
     transition: all 0.3s ease;
 }
 
+.burger-menu.open {
+    position: fixed;
+    right: 1.5em;
+}
+
 .burger-menu.open .line:nth-child(1) {
     transform: rotate(-45deg);
 }
@@ -198,19 +203,19 @@ nav .logo {
     position: relative;
 }
 
-/* .container::before,
+.container::before,
 .container::after {
-    border: 1px solid red;
     content: '';
     display: block;
-    height: 100px;
-} */
+    width: 100%;
+}
+
+.container::before {
+    height: 60px;
+}
 
 .container::after {
-    content: '';
-    display: block;
     height: 150px;
-    width: 100%;
 }
 
 .footer {
