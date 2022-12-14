@@ -4,7 +4,6 @@ import { useState } from 'react';
 
 export const Navbar = () => {
     const [isExpanded, setIsExpanded] = useState(false);
-    const [showAccordion, setShowAccordion] = useState(false);
 
     let isMenuOpen = isExpanded ? 'open' : '';
 
@@ -12,10 +11,6 @@ export const Navbar = () => {
         setIsExpanded((prevState) => !prevState);
     };
     // logic to close navbar when you click outside
-
-    const handleOpen = () => {
-        setShowAccordion((prevState) => !prevState);
-    };
 
     return (
         <nav>
@@ -31,11 +26,6 @@ export const Navbar = () => {
                 <ul>
                     <li>
                         <Link href='/'>
-                            <a>Home</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href='/projects'>
                             <a>Projects</a>
                         </Link>
                     </li>
@@ -45,7 +35,7 @@ export const Navbar = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link href='/calender'>
+                        <Link href='/news'>
                             <a>News</a>
                         </Link>
                     </li>
