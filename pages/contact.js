@@ -42,7 +42,7 @@ const Contact = () => {
             <MetaData page='Contact' />
             <div className={`container ${styles.contact}`}>
                 <div className={styles.formIntro}>
-                    <h1 className='page-title'>Contact</h1>
+                    <h2 className='page-title'>Contact</h2>
                     <p className={`paragraph ${styles.contactParagraph}`}>
                         Interested in collaborations, starting a new project, or
                         just want to say hi? <br />
