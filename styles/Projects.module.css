@@ -1,3 +1,10 @@
+.projects {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .projectsList {
     display: grid;
     row-gap: 20px;
@@ -6,11 +13,10 @@
 }
 
 .projectCard {
-    --dark: #372948;
-    --opaqdark: rgba(55, 41, 72, 0.5);
+    --dark: #130e1a;
+    --opaqdark: rgba(19, 14, 26, 0.4);
     --white: #f5f5f5;
     --pinkish: #bb85ba;
-
     max-width: 600px;
 }
 .projectsCard__thumbnail {

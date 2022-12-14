@@ -5,17 +5,16 @@ import styles from '../styles/Projects.module.css';
 const ProjectsCard = ({ project }) => {
     // how to make responsive size??
     // function that checks the width of the screen and then assigns the value
-    const WIDTH = '600';
-    const HEIGHT = '380';
-    const { slug, projectTitle, thumbnail } = project;
+    // const WIDTH = '600';
+    // const HEIGHT = '380';
+    // const { slug, projectTitle, thumbnail } = project;
 
-    // check if project card is the first element.
-    // If it is, add attribute "priority"
-    // if card contains "Hilma", add to first place
+    // sort projects based on the year
+    // latest year = at the top
 
     return (
         <div className={styles.projectCard}>
-            <Link href={`/projects/${slug}`}>
+            {/* <Link href={`/projects/${slug}`}>
                 <a>
                     <div className={styles.projectsCard__thumbnail}>
                         <Image
@@ -32,7 +31,7 @@ const ProjectsCard = ({ project }) => {
                         </div>
                     </div>
                 </a>
-            </Link>
+            </Link> */}
         </div>
     );
 };
