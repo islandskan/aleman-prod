@@ -32,16 +32,20 @@ const About = ({ items }) => {
     return (
         <>
             <MetaData page='About' />
-            <div className='container'>
+            <div className={`container ${styles.aboutContainer}`}>
                 <div className={styles.artistContainer}>
-                    <h3 className='page-title'>{artistStatementHeadline}</h3>
+                    <h3 className={`page-title ${styles.aboutTitle}`}>
+                        {artistStatementHeadline}
+                    </h3>
                     <div className={styles.bodyContainer}>
                         {documentToReactComponents(artistStatementBody)}
                     </div>
                     {/* <div className={styles.bodyContainer}>Video interviews</div> */}
                 </div>
                 <div className={styles.cvContainer}>
-                    <h3 className='page-title'>{cvHeadline}</h3>
+                    <h3 className={`page-title ${styles.aboutTitle}`}>
+                        {cvHeadline}
+                    </h3>
                     <Button
                         type='button'
                         classname={styles.cvBtn}
@@ -51,8 +55,10 @@ const About = ({ items }) => {
                         {documentToReactComponents(cvBody)}
                     </div>
                 </div>
-                <div className={styles.publicationsContainer}>
-                    <h3 className='page-title'>{publicationsHeadline}</h3>
+                <div className={styles.publishedContainer}>
+                    <h3 className={`page-title ${styles.aboutTitle}`}>
+                        {publicationsHeadline}
+                    </h3>
                     <div className={styles.bodyContainer}>
                         {documentToReactComponents(publicationsBody)}
                     </div>
