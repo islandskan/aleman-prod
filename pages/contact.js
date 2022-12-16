@@ -54,19 +54,6 @@ const Contact = () => {
                     {!sent ? (
                         <form className={styles.form} onSubmit={handleSubmit}>
                             <InputField
-                                labelFor='subject'
-                                labelTitle='Subject'
-                                inputType='text'
-                                inputId='subject'
-                                inputName='subject'
-                                placeholder='Write subject here'
-                                isRequired={false}
-                                labelClass={styles.label}
-                                inputClass={styles.input}
-                                handleClick={handleChange}
-                                value={formData.subject}
-                            />
-                            <InputField
                                 labelFor='fullname'
                                 labelTitle='Full Name'
                                 inputType='text'
@@ -91,6 +78,19 @@ const Contact = () => {
                                 inputClass={styles.input}
                                 handleClick={handleChange}
                                 value={formData.email}
+                            />
+                            <InputField
+                                labelFor='subject'
+                                labelTitle='Subject'
+                                inputType='text'
+                                inputId='subject'
+                                inputName='subject'
+                                placeholder='Write subject here'
+                                isRequired={false}
+                                labelClass={styles.label}
+                                inputClass={styles.input}
+                                handleClick={handleChange}
+                                value={formData.subject}
                             />
                             <TextArea
                                 labelFor='message'

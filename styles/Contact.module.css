@@ -7,6 +7,9 @@
     margin-bottom: 2em;
 }
 
+.contactParagraph {
+}
+
 .formContainer {
 }
 
@@ -18,7 +21,7 @@
 
 .label {
     font-size: 1rem;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     letter-spacing: 0.05rem;
     text-transform: uppercase;
     font-weight: 400;
@@ -29,7 +32,7 @@
     font-family: 'Fira Sans', sans-serif;
     font-size: 0.9rem;
     line-height: 1.5;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .textarea {
