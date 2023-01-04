@@ -1,9 +1,8 @@
-import { MetaData } from '../../../components/MetaData';
-import { fetchEntries } from '../../../api/fetchEntries';
-import { client } from '../../../api/client';
+import { MetaData } from '../../components/MetaData.js';
+// import { fetchEntries } from '../../../api/fetchEntries';
+// import { client } from '../../../api/client';
 
-const SingleProject = ({ project }) => {
-    console.log(project);
+const SingleProject = () => {
     return (
         <>
             <MetaData page='Single Project' />
